@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1e1b4b;
+}
+
+*:focus-visible {
+  outline: 3px solid #2a9d8f;
+  outline-offset: 3px;
+}
+
+.section {
+  @apply px-5 py-16 sm:px-6 lg:px-8 lg:py-24;
+}
+
+.container {
+  @apply mx-auto max-w-6xl;
+}
+
+.button-base {
+  @apply inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-bold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4;
+}
+
+.button-primary {
+  @apply button-base bg-purple text-white shadow-lg shadow-purple/20 hover:-translate-y-0.5 hover:bg-teal;
+}
+
+.button-secondary {
+  @apply button-base border border-white text-white hover:-translate-y-0.5 hover:bg-white hover:text-navy;
+}
+
+.button-teal {
+  @apply button-base bg-teal text-white shadow-lg shadow-teal/20 hover:-translate-y-0.5 hover:bg-purple;
+}
+
+.card {
+  @apply rounded-lg border border-purple/10 bg-white p-6 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-purple/30;
+}
