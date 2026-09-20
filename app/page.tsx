@@ -196,7 +196,7 @@ See Services
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {testimonials.map((t) => (
           <div key={t.name} className="border-l-4 border-[#6D28D9] pl-6 py-2">
-            <p className="text-[#1E1B4B]/80 italic mb-4">"{t.quote}"</p>
+            <p className="text-[#1E1B4B]/80 italic mb-4">&ldquo;{t.quote}&rdquo;</p>
             <p className="font-semibold text-[#1B2E4B]">— {t.name}</p>
             <p className="text-sm text-[#1E1B4B]/60">{t.context} · ⭐⭐⭐⭐⭐</p>
           </div>
