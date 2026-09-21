@@ -173,7 +173,7 @@ export default function Services() {
       {/* Workshops */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1B2E4B] mb-4">🎫 Workshops</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1B2E4B] mb-4">🎤 Workshops</h2>
           <p className="text-[#1E1B4B]/70 mb-10">
             For teams, labs, and communities. Online or in-person.
           </p>
