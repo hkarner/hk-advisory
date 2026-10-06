@@ -16,7 +16,7 @@ function LinkedInIcon() {
 
 export function Footer() {
   return (
-    <footer className="bg-navy px-5 py-10 text-white sm:px-6 lg:px-8">
+    <footer className="site-footer bg-navy px-5 py-10 text-white sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-8">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
           <p className="text-lg font-extrabold">HK Advisory</p>

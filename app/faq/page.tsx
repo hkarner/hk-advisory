@@ -51,29 +51,29 @@ export default function FAQ() {
   return (
     <main>
       {/* Header */}
-      <section className="bg-[#1B2E4B] text-white py-20 px-6 text-center">
+      <section className="bg-[#243c35] text-white py-20 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold">Frequently Asked Questions</h1>
         </div>
       </section>
 
       {/* Accordion */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-[#F2EFE7] py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <FAQAccordion items={faqs} />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-[#EDE9FE] py-16 px-6 text-center">
+      <section className="bg-[#E5E9DF] py-16 px-6 text-center">
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#1B2E4B] mb-3">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#243c35] mb-3">
             Still have questions?
           </h2>
-          <p className="text-[#1E1B4B]/70 mb-8">Use the form to ask — no commitment required.</p>
+          <p className="text-[#243c35]/70 mb-8">Use the form to ask — no commitment required.</p>
           <Link
             href="/book"
-            className="bg-[#6D28D9] hover:bg-[#5b21b6] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
+            className="bg-[#725187] hover:bg-[#5d406f] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
           >
             Use the Contact Form
           </Link>

@@ -17,7 +17,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur transition-shadow ${
+      className={`site-header fixed inset-x-0 top-0 z-50 bg-[#F2EFE7]/95 backdrop-blur transition-shadow ${
         hasShadow ? "shadow-md shadow-navy/10" : ""
       }`}
     >
@@ -25,8 +25,8 @@ export function Navbar() {
         aria-label="Main navigation"
         className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-6 lg:px-8"
       >
-        <Link className="text-lg font-extrabold tracking-normal text-navy" href="/">
-          HK Advisory
+        <Link className="brand-lockup text-lg font-extrabold tracking-normal text-navy" href="/">
+          <span className="brand-mark" aria-hidden="true">HK</span><span>HK Advisory</span>
         </Link>
 
         <button
@@ -53,14 +53,14 @@ export function Navbar() {
             </Link>
           ))}
           <Link className="button-primary px-4 py-2" href="/book">
-            Contact
+            Let’s talk ↗
           </Link>
         </div>
       </nav>
 
       {isOpen ? (
         <div
-          className="border-t border-navy/10 bg-white px-5 pb-5 md:hidden"
+          className="border-t border-navy/10 bg-[#F2EFE7] px-5 pb-5 md:hidden"
           id="mobile-navigation"
         >
           <div className="mx-auto flex max-w-6xl flex-col gap-3 pt-4">
@@ -79,7 +79,7 @@ export function Navbar() {
               href="/book"
               onClick={() => setIsOpen(false)}
             >
-              Contact
+              Let’s talk ↗
             </Link>
           </div>
         </div>

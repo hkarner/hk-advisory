@@ -84,7 +84,7 @@ export default function Services() {
   return (
     <main>
       {/* Header */}
-      <section className="bg-[#1B2E4B] text-white py-20 px-6 text-center">
+      <section className="bg-[#243c35] text-white py-20 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Work With Me</h1>
           <p className="text-white/80 text-lg">
@@ -95,32 +95,32 @@ export default function Services() {
       </section>
 
       {/* 1-Hour Sessions */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-[#F2EFE7] py-20 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="inline-block bg-[#EDE9FE] text-[#6D28D9] text-sm font-semibold px-4 py-1 rounded-full mb-4">
+          <div className="inline-block bg-[#E5E9DF] text-[#725187] text-sm font-semibold px-4 py-1 rounded-full mb-4">
             Most popular · No commitment required
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1B2E4B] mb-2">
-            🕓 1-Hour Sessions — $125 flat
+          <h2 className="text-3xl md:text-4xl font-bold text-[#243c35] mb-2">
+            1-Hour Sessions — $125 flat
           </h2>
-          <p className="text-[#1E1B4B]/70 mb-10">
+          <p className="text-[#243c35]/70 mb-10">
             No ongoing commitment. Book one, see if it's useful.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {sessions.map((s) => (
               <div
                 key={s.title}
-                className="border-t-4 border-[#6D28D9] rounded-xl p-6 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
+                className="border-t-4 border-[#725187] rounded-xl p-6 bg-[#F2EFE7] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
               >
-                <h3 className="font-bold text-[#1B2E4B] text-lg mb-2">{s.title}</h3>
-                <p className="text-[#1E1B4B]/70">{s.desc}</p>
+                <h3 className="font-bold text-[#243c35] text-lg mb-2">{s.title}</h3>
+                <p className="text-[#243c35]/70">{s.desc}</p>
               </div>
             ))}
           </div>
           <div className="text-center">
             <Link
               href="/book"
-              className="bg-[#6D28D9] hover:bg-[#5b21b6] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
+              className="bg-[#725187] hover:bg-[#5d406f] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
             >
               Book a 1-Hour Session
             </Link>
@@ -129,20 +129,20 @@ export default function Services() {
       </section>
 
       {/* Packages */}
-      <section className="bg-[#EDE9FE] py-20 px-6">
+      <section className="bg-[#E5E9DF] py-20 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1B2E4B] mb-4">
-            💼 Bigger Engagements
+          <h2 className="text-3xl md:text-4xl font-bold text-[#243c35] mb-4">
+            Bigger Engagements
           </h2>
-          <p className="text-[#1E1B4B]/70 mb-10 max-w-2xl">
+          <p className="text-[#243c35]/70 mb-10 max-w-2xl">
             For teams, complex builds, or ongoing work. Starts with a free 1-hour scope meeting. Not
             sure what you need or how long it will take? That's normal — we'll map it out together
             first. You'll receive a written scope of work and pricing before any commitment.
           </p>
           <div className="overflow-x-auto rounded-xl shadow-sm">
-            <table className="w-full bg-white text-left">
+            <table className="w-full bg-[#F2EFE7] text-left">
               <thead>
-                <tr className="bg-[#1B2E4B] text-white">
+                <tr className="bg-[#243c35] text-white">
                   <th className="px-6 py-4 font-semibold">Package</th>
                   <th className="px-6 py-4 font-semibold">What's Included</th>
                   <th className="px-6 py-4 font-semibold">Starting Price</th>
@@ -150,10 +150,10 @@ export default function Services() {
               </thead>
               <tbody>
                 {packages.map((p, i) => (
-                  <tr key={p.name} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F3FF]'}>
-                    <td className="px-6 py-4 font-semibold text-[#1B2E4B]">{p.name}</td>
-                    <td className="px-6 py-4 text-[#1E1B4B]/80">{p.included}</td>
-                    <td className="px-6 py-4 font-semibold text-[#6D28D9]">{p.price}</td>
+                  <tr key={p.name} className={i % 2 === 0 ? 'bg-[#F2EFE7]' : 'bg-[#F2EFE7]'}>
+                    <td className="px-6 py-4 font-semibold text-[#243c35]">{p.name}</td>
+                    <td className="px-6 py-4 text-[#243c35]/80">{p.included}</td>
+                    <td className="px-6 py-4 font-semibold text-[#725187]">{p.price}</td>
                   </tr>
                 ))}
               </tbody>
@@ -162,7 +162,7 @@ export default function Services() {
           <div className="text-center mt-10">
             <Link
               href="/book"
-              className="bg-[#2A9D8F] hover:bg-[#21867a] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
+              className="bg-[#243c35] hover:bg-[#334f42] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
             >
               Request a Scope Meeting
             </Link>
@@ -171,10 +171,10 @@ export default function Services() {
       </section>
 
       {/* Workshops */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-[#F2EFE7] py-20 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1B2E4B] mb-4">🎤 Workshops</h2>
-          <p className="text-[#1E1B4B]/70 mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#243c35] mb-4">Workshops</h2>
+          <p className="text-[#243c35]/70 mb-10">
             For teams, labs, and communities. Online or in-person.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -183,16 +183,16 @@ export default function Services() {
                 key={w.title}
                 className="border border-gray-100 rounded-xl p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-200"
               >
-                <h3 className="font-bold text-[#1B2E4B] text-lg mb-2">{w.title}</h3>
-                <p className="text-[#3B82F6] text-sm font-medium mb-1">{w.format}</p>
-                <p className="text-[#1E1B4B]/60 text-sm">{w.price}</p>
+                <h3 className="font-bold text-[#243c35] text-lg mb-2">{w.title}</h3>
+                <p className="text-[#725187] text-sm font-medium mb-1">{w.format}</p>
+                <p className="text-[#243c35]/60 text-sm">{w.price}</p>
               </div>
             ))}
           </div>
           <div className="text-center">
             <Link
               href="/book"
-              className="bg-[#6D28D9] hover:bg-[#5b21b6] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
+              className="bg-[#725187] hover:bg-[#5d406f] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 inline-block"
             >
               Inquire About a Workshop
             </Link>
@@ -201,10 +201,10 @@ export default function Services() {
       </section>
 
       {/* FAQ Teaser */}
-      <section className="bg-[#EDE9FE] py-10 px-6 text-center">
-        <p className="text-[#1E1B4B]/80">
+      <section className="bg-[#E5E9DF] py-10 px-6 text-center">
+        <p className="text-[#243c35]/80">
           Have questions?{' '}
-          <Link href="/faq" className="text-[#6D28D9] font-semibold hover:underline">
+          <Link href="/faq" className="text-[#725187] font-semibold hover:underline">
             Check the FAQ →
           </Link>
         </p>
