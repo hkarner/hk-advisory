@@ -81,3 +81,5 @@ body.font-sans{font-family:Arial,Helvetica,sans-serif!important}
 
 .build-logo{height:180px;display:flex;align-items:center;justify-content:center}.build-logo img{width:100%;height:100%;object-fit:contain}.build-visual.preflight-visual{background:#fff}.build-visual.mind-map-visual{background:#e5e9df}
 @media(max-width:760px){.build-logo{height:150px}}
+
+.project-demos{margin-top:24px;border-top:1px solid #243c3526;padding-top:18px}.project-demos summary{cursor:pointer;font-size:13px;font-weight:600;list-style-position:inside;padding:6px 0}.project-demos summary:hover{color:#725187}.demo-note{font-size:12px;line-height:1.7;color:var(--muted);margin-top:12px}.demo-list{display:grid;gap:24px;margin-top:16px}.demo-list figcaption{font-size:12px;margin-bottom:10px;font-weight:600}.demo-list video{display:block;width:100%;max-height:420px;aspect-ratio:16/9;background:#1d312b;border-radius:3px;object-fit:contain}.demo-open{display:inline-block;font-size:11px;margin-top:10px;text-decoration:underline;text-underline-offset:3px}

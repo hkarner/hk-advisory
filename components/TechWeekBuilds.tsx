@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import DemoVideos from './DemoVideos'
 
 const builds = [
   {
@@ -48,6 +49,10 @@ export default function TechWeekBuilds() {
               <p className="build-description">{build.description}</p>
               <p className="build-contribution"><strong>My contribution</strong>{build.contribution}</p>
               <p className="build-event">{build.event}</p>
+              <DemoVideos project={build.name} demos={build.name === 'Mind Map' ? [
+                { src: '/videos/mind-map-demo-1.MP4', label: 'Mind Map · Demo 1' },
+                { src: '/videos/mind-map-demo-2.MP4', label: 'Mind Map · Demo 2' },
+              ] : [{ src: '/videos/preflight-demo.mp4', label: 'Preflight · Concept demonstration' }]} note={build.name === 'Preflight' ? 'A concept demonstration of the author-controlled review process. The app remains an early local prototype.' : 'Recorded demonstrations of the collaborative prototype.'} />
             </article>
           ))}
         </div>
